@@ -82,7 +82,7 @@ function showFromFile(file) {
 let apiRequestLoop = function(inp) {
     let promiseArray = [];
     for (let i = 0; i < inp; i++) {
-      promiseArray.push(fetch('https://randomuser.m/api').then(function(response) {
+      promiseArray.push(fetch('https://randomuser.me/api').then(function(response) {
         return response.json();
       }));
     }
